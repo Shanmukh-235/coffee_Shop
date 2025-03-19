@@ -7,6 +7,9 @@
 body {
     overflow-x: hidden;
 }
+.padsec{
+    padding-top: 80px;
+}
 #home{
     height: 95vh;
     background-image: url(./assets/hero.jpg);
@@ -43,11 +46,31 @@ body {
     font-weight: 700;
 }
 #aus{
-    padding: 20px;
-
+    line-height: 1.5;
+    text-align: justify;
 }
 #about > .row {
     width: 70%;
-    justify-content: center;
-    align-items: center;
+}
+#menu{
+    background: #F7F6F2;
+}
+.card-img-top {
+    /*height: 200px; /* Adjust as needed */
+    object-fit: cover;
+  }
+  /* .row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    /* padding-right: calc(var(--bs-gutter-x)* .5); */
+    /* padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+} 
+*/
+#cards-section{
+    padding: 35px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
 }
