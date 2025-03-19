@@ -68,9 +68,16 @@ body {
     margin-top: var(--bs-gutter-y);
 } 
 */
+
 #cards-section{
     padding: 35px;
     gap: 20px;
-    display: flex;
-    flex-direction: row;
+   
+    
+}
+@media (max-width: 768px) {
+    #cards-section > .card{
+        margin: 15px;
+        justify-content: center;
+    }
 }
