@@ -6,6 +6,11 @@
 }
 body {
     overflow-x: hidden;
+    overflow: scroll;
+}
+::root{
+    -sm-txt:8px;
+    -tt-txt:25px;
 }
 .padsec{
     padding-top: 80px;
@@ -74,7 +79,7 @@ body {
   }
 #cards-section{
     padding: 35px;
-    gap: 15px;
+    gap: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -90,6 +95,18 @@ body {
     padding-top: 65px;
     padding-bottom: 25px;
 }
+.dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: var(--bs-secondary-text-emphasis);
+}
+hr{
+    width: 80%;
+    margin: auto;
+}
+footer {
+    text-align: center;
+}
 @media (max-width: 768px) {
     #cards-section{
         flex-direction: column;
@@ -101,5 +118,11 @@ body {
     }
     .text-hero {
         padding: 30px;
+    }
+    .c-txt{
+        font-size: 10px;
+    }
+    .car-tle{
+        font-size: 15px;
     }
 }
