@@ -48,6 +48,7 @@ body {
 #aus{
     line-height: 1.5;
     text-align: justify;
+    padding-top: 20vh;
 }
 #about > .row {
     width: 70%;
@@ -68,16 +69,27 @@ body {
     margin-top: var(--bs-gutter-y);
 } 
 */
-
+.card {
+    width: 100%; /* Makes sure the cards take full grid space */
+  }
 #cards-section{
     padding: 35px;
-    gap: 20px;
-   
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
     
 }
+.espresso-delights >  #cards-section{
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
 @media (max-width: 768px) {
-    #cards-section > .card{
-        margin: 15px;
-        justify-content: center;
+    #cards-section{
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
     }
 }
