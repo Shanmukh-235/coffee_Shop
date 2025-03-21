@@ -8,6 +8,9 @@ body {
     overflow-x: hidden;
     overflow: scroll;
 }
+body > #home > .navbar{
+    position: sticky;
+}
 ::root{
     -sm-txt:8px;
     -tt-txt:25px;
@@ -24,9 +27,6 @@ body {
 }
 .text-hero{
     padding: 100px;
-}
-.navbar{
-    background-color: transparent;
 }
 #about{
     background-size: cover;
@@ -114,7 +114,15 @@ footer {
         padding: 15px;
     }
     .large-text{
-        font-size: 55px;
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+    .sub-txt{
+        font-size: 20px;
+    }
+    .sub-txt-sm{
+        font-size: 15px;
+        padding-bottom: 10px;
     }
     .text-hero {
         padding: 30px;
@@ -124,5 +132,8 @@ footer {
     }
     .car-tle{
         font-size: 15px;
+    }
+    #aus{
+        padding-top: 20px;
     }
 }
