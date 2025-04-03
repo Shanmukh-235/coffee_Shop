@@ -1,139 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family:'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
-body {
+
+html, body {
     overflow-x: hidden;
-    overflow: scroll;
+    width: 100%;
 }
-body > #home > .navbar{
+
+/* Navbar */
+body > #home > .navbar {
     position: sticky;
 }
-::root{
-    -sm-txt:8px;
-    -tt-txt:25px;
+
+/* Root Variables */
+:root {
+    --sm-txt: 8px;
+    --tt-txt: 25px;
 }
-.padsec{
+
+/* Sections */
+.padsec {
     padding-top: 80px;
 }
-#home{
+
+#home {
     height: 95vh;
     background-image: url(./assets/hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.text-hero{
+
+.text-hero {
     padding: 100px;
 }
-#about{
+
+#about {
     background-size: cover;
     background-color: #d7ccc8;
     align-content: center;
 }
-#carouselExampleIndicators{
+
+#carouselExampleIndicators {
     background-size: contain;
 }
-.row{
-    margin: 0;
+
+/* Fix for overflowing rows */
+.row {
+    margin: 0 !important;
     padding: 25px;
     overflow: hidden;
 }
-.carousel-inner img {
+
+/* Image Responsiveness */
+.carousel-inner img, img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
 }
-.large-text{
-    font-size: 65px; 
+
+/* Large text styles */
+.large-text {
+    font-size: 65px;
     font-weight: 700;
 }
-#aus{
+
+#aus {
     line-height: 1.5;
     text-align: justify;
     padding-top: 20vh;
 }
+
+/* About section fix */
 #about > .row {
     width: 70%;
 }
-#menu{
+
+/* Menu */
+#menu {
     background: #F7F6F2;
 }
+
+/* Card Images */
 .card-img-top {
-    /*height: 200px; /* Adjust as needed */
     object-fit: cover;
-  }
-  /* .row>* {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    /* padding-right: calc(var(--bs-gutter-x)* .5); */
-    /* padding-left: calc(var(--bs-gutter-x)* .5);
-    margin-top: var(--bs-gutter-y);
-} 
-*/
-.card {
-    width: 100%; /* Makes sure the cards take full grid space */
-  }
-#cards-section{
+}
+
+/* Cards Section Fix */
+#cards-section {
     padding: 35px;
     gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    
-}
-.espresso-delights >  #cards-section{
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
 }
-.categ{
+
+.espresso-delights > #cards-section {
+    justify-content: center;
+}
+
+/* Category Section */
+.categ {
     padding-top: 65px;
     padding-bottom: 25px;
 }
+
+/* Dropdown Fix */
 .dropdown-item:active {
     color: var(--bs-dropdown-link-active-color);
     text-decoration: none;
     background-color: var(--bs-secondary-text-emphasis);
 }
-hr{
+
+/* HR Style */
+hr {
     width: 80%;
     margin: auto;
 }
+
+/* Footer */
 footer {
     text-align: center;
 }
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    #cards-section{
+    #cards-section {
         flex-direction: column;
         text-align: center;
         padding: 15px;
     }
-    .large-text{
+    
+    .large-text {
         font-size: 50px;
         padding-bottom: 30px;
     }
-    .sub-txt{
+    
+    .sub-txt {
         font-size: 20px;
     }
-    .sub-txt-sm{
+    
+    .sub-txt-sm {
         font-size: 15px;
         padding-bottom: 10px;
     }
+    
     .text-hero {
         padding: 30px;
     }
-    .c-txt{
+    
+    .c-txt {
         font-size: 10px;
     }
-    .car-tle{
+    
+    .car-tle {
         font-size: 15px;
     }
-    #aus{
+    
+    #aus {
         padding-top: 20px;
     }
 }

@@ -62,11 +62,19 @@
       </div>
     </nav>
     <div class="text-hero">
-      <h1 class="large-text">Welcome to <span style="font-style: italic; color: #F8F9FA;"class="large-text">#BrewSphere</span> </h1>
+      <h1 class="large-text">Welcome to <span style="font-style: italic; color: #F8F9FA;"
+          class="large-text">#BrewSphere</span> </h1>
       <h5 class="sub-txt"><i>"Brewed with passion, served with love."</i></h5>
       <h5 class="sub-txt-sm">Start your day with the perfect cup of coffee. Visit us or order online now!</h5>
-      <button type="button" class="btn btn-light">Order Now</button>
-      <button type="button" class="btn btn-light">View Menu</button>
+      <button type="button" class="btn btn-light ord-view">Order Now</button>
+      <button type="button" class="btn btn-light ord-view">View Menu</button>
+      <script>
+        document
+          .getElementsByClassName("ord-view")
+          .addEventListener("click", function () {
+            window.location.href = "#menu";
+          });
+      </script>
     </div>
   </div>
 
@@ -146,7 +154,7 @@
       </center>
       <hr>
 
-      <div class="row row-cols-2 row-cols-md-5 g-4">
+      <div class="row row-cols-1 row-cols-md-5 g-4">
         <div class="col">
           <div class="card h-100">
             <img src="./assets/esprs.jpg" class="card-img-top" alt="...">
@@ -255,7 +263,7 @@
         </center>
         <hr>
 
-        <div class="row row-cols-2 row-cols-md-5 g-4">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
           <div class="col">
             <div class="card h-100">
               <img src="./assets/gt.jpeg" class="card-img-top" alt="...">
@@ -367,7 +375,7 @@
           </center>
           <hr>
 
-          <div class="row row-cols-2 row-cols-md-5 g-4">
+          <div class="row row-cols-1 row-cols-md-5 g-4">
             <div class="col">
               <div class="card h-100">
                 <img src="./assets/croissant.avif" class="card-img-top" alt="...">
@@ -494,7 +502,8 @@
             <p class="mb-1">© 2025 BrewSphere. All rights reserved.</p>
             <p class="mb-0">
               Developed by
-              <a href="https://shanmukha-s-port-folio.vercel.app/" target="_blank" style="color: #f8b400; text-decoration: none;">
+              <a href="https://shanmukha-s-port-folio.vercel.app/" target="_blank"
+                style="color: #f8b400; text-decoration: none;">
                 A. Shanmukha Poorna Chand
               </a>
             </p>
